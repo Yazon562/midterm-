@@ -6,7 +6,7 @@ function validateForm() {
     
     var confPassword = document.forms["myForm"]["confPassword"].value;
     
-    if (username == "") {//validation for username
+    if (username == "") {
     
     document.getElementById("msg").innerHTML='Please username not empty<br>';
     
@@ -14,7 +14,7 @@ function validateForm() {
     
     }
     
-    if (Password == "") {//validation for password
+    if (Password == "") {
     
     document.getElementById("msg").innerHTML='Please Password not empty<br>';
     
@@ -22,7 +22,7 @@ function validateForm() {
     
     }
     
-    if (confPassword == "") {//validation for Confriemd password
+    if (confPassword == "") {
     
     document.getElementById("msg").innerHTML='Please Conform Password not empty<br>';
     
@@ -30,7 +30,7 @@ function validateForm() {
     
     }
     
-    if (username.length >8 || username.length < 4 ) {//validation for username
+    if (username.length >8 || username.length < 4 ) {
     
     document.getElementById("msg").innerHTML='User Name Must be between 4 and 8 character<br>';
     
@@ -38,7 +38,7 @@ function validateForm() {
     
     }
     
-    if (Password.length >8 || Password.length < 4 ) {//validation for password
+    if (Password.length >8 || Password.length < 4 ) {
     
     document.getElementById("msg").innerHTML='Password Must be between 4 and 8 character<br>';
     
@@ -46,7 +46,7 @@ function validateForm() {
     
     }
     
-    if (confPassword.length >8 || confPassword.length < 4 ) {//validation for Confriemd password
+    if (confPassword.length >8 || confPassword.length < 4 ) {
     
     document.getElementById("msg").innerHTML='Confirmed Password Must be between 4 and 8 character<br>';
     
@@ -54,13 +54,13 @@ function validateForm() {
     
     }
     
-    //validation for password and Confriemd password are same or not
+    
     
     if(confPassword.localeCompare(Password)==0) {
     
     document.getElementById("msg").innerHTML="";
     
-    document.getElementById("msg1").innerHTML='The input are correct';
+    document.getElementById("msg").innerHTML='The input are correct';
     
     return false;}
     
