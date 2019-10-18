@@ -37,18 +37,11 @@ function validateForm() {
     return false;
     
     }
-    
-    if (Password.length >8 || Password.length < 4 ) {
-    
-    document.getElementById("msg").innerHTML='Password Must be between 4 and 8 character<br>';
-    
-    return false;
-    
-    }
-    
+
+    {
     if (confPassword.length >8 || confPassword.length < 4 ) {
     
-    document.getElementById("msg").innerHTML='Confirmed Password Must be between 4 and 8 character<br>';
+    document.getElementById("msg").innerHTML='The length of user name and password must be between 4 and 8<br>';
     
     return false;
     
@@ -59,16 +52,15 @@ function validateForm() {
     
     document.getElementById("msg").innerHTML="";
     
-    document.getElementById("msg1").innerHTML='The input are correct';
+    document.getElementById("msg1").innerHTML='The input values are correct';
     
     return false;}
     
     else{
     
-    document.getElementById("msg").innerHTML='Password and Confirmed Password Not Same<br>';
+    document.getElementById("msg").innerHTML='The passwords are different</br>';
     
     return false;}
     
     }
-    
-    
+}
