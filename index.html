@@ -1,62 +1,43 @@
-<!DOCTYPE html>
-
-<html><!--html Code -->
-
+<!DOCTYPE <!DOCTYPE html>
+<html>
 <head>
-
-<script><!--Javascript Code -->
-
-
-
-</script>
-
-<style>
-
-
-</style>
-
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>YAz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    
 </head>
 
+
 <body>
+    <h1>User Login</h1>
+<div id = "form">
+    <form name ="myForm">
+        Username:
+        <input type="text" name="username" id ='username'>
+        <br>
+        <br>
 
-<form name="myForm" onsubmit="return validateForm()">
+        Password:
+        <input type="password" name="password" id='password'>
+        <br>
+        <br>
 
-<h1 class="center" align="Center">User Login</h1>
+        Confirmation:
+        <input type="password" name="confirmation" id='confirmation'>
+        <br>
+        <br>
 
-<div class="center">
+        <input type="submit" value="Submit" onclick = "javaFunc();">
+    </form> 
 
-<table>
-
-<tr>
-
-<td>Name: </td>
-
-<td><input type="text" name="Username" maxlength=12></td>
-
-<tr>
-
-<td>Password:</td>
-
-<td> <input type="password" name="Password" maxlength=12></td>
-
-<tr>
-
-<td>Convfirmation: </td>
-
-<td><input type="password" name="confPassword" maxlength=12></td>
-
-<tr><td colspan=2><input type="submit" value="Submit"></td></tr>
-
-<tr><td colspan=2><span id="msg" style="color:red"></span></td></tr>
-
-<tr><td colspan=2><span id="msg1" style="color:green"></span></td></tr>
-
-</table>
-
+    <p1 id="message"></p1>
+    
 </div>
 
-</form>
-
+    <script src="app.js"></script>
 </body>
+
 
 </html>
