@@ -10,6 +10,7 @@ function validateForm() {
     
     document.getElementById("msg").innerHTML='Please username not empty<br>';
     
+    return false;
     
     }
     
@@ -17,6 +18,7 @@ function validateForm() {
     
     document.getElementById("msg").innerHTML='Please Password not empty<br>';
     
+    return false;
     
     }
     
@@ -24,7 +26,7 @@ function validateForm() {
     
     document.getElementById("msg").innerHTML='Please Confirm Password not empty<br>';
     
-    
+    return false;
     
     }
     
@@ -32,7 +34,7 @@ function validateForm() {
     
     document.getElementById("msg").innerHTML='The length of user name and password must be between 4 and 8<br>';
     
- 
+    return false;
     
     }
     
@@ -40,7 +42,7 @@ function validateForm() {
     
     document.getElementById("msg").innerHTML='The length of user name and password must be between 4 and 8<br>';
     
-    
+    return false;
     
     }
     
@@ -48,7 +50,7 @@ function validateForm() {
     
     document.getElementById("msg").innerHTML='The length of user name and password must be between 4 and 8<br>';
     
-   
+    return false;
     
     }
     
@@ -59,13 +61,13 @@ function validateForm() {
     
     document.getElementById("msg1").innerHTML='The input values are correct';
     
-    
+    return false;}
     
     else{
 
     
     document.getElementById("msg").innerHTML='The passwords are different<br>';
     
-   
+    return false;}
     
 }
