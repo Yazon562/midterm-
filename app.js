@@ -64,6 +64,7 @@ function validateForm() {
     return false;}
     
     else{
+
     
     document.getElementById("msg").innerHTML='Password and Confirmed Password Not Same<br>';
     
