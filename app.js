@@ -45,7 +45,7 @@ function validateForm() {
     
     document.getElementById("msg").innerHTML="";
     
-    document.getElementById("msg").innerHTML='The input valus are correct';
+    document.getElementById("msg1").innerHTML='The input valus are correct';
     
     return false;}
     
